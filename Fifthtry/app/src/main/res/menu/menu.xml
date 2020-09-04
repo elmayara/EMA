@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu tools:context="com.example.resit.MainActivity" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Hipotenochas"
+        android:icon="@drawable/crt"
+        android:title="Hipotenochas">
+
+        <menu>
+            <item
+                android:id="@+id/bandera"
+                android:icon="@drawable/crt"
+                android:title="Bandera" />
+            <item
+                android:id="@+id/bomba"
+                android:icon="@drawable/crt"
+                android:title="Bomba" />
+            <item
+                android:id="@+id/exclamacion"
+                android:icon="@drawable/crt"
+                android:title="exclamacion" />
+        </menu>
+    </item>
+    <item android:title="Instrucciones" android:id="@+id/instrucciones"/>
+    <item
+        android:id="@+id/comenzar"
+        android:title="comenzar" />
+    <item android:title="Configuracion" android:id="@+id/configuracion">
+        <menu>
+            <item android:title="Facil" android:id="@+id/facil"/>
+            <item android:title="Medio" android:id="@+id/medio"/>
+            <item android:title="Dificil" android:id="@+id/dificil"/>
+        </menu>
+    </item>
+    <item android:title="Salir" android:id="@+id/salir" app:showAsAction="never" android:orderInCategory="100"/>
+</menu>

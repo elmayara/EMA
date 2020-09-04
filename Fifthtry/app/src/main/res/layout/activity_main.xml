@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="476dp">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="636dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="647dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/r7" />
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="76dp"
+                android:layout_height="92dp"
+                android:layout_gravity="top"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_star"
+                tools:ignore="VectorDrawableCompat"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="356dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/crt1" />
+
+            <ImageView
+                android:id="@+id/dont"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                app:srcCompat="@drawable/crt"
+                android:layout_gravity="right"
+                android:color="#FFFFFF"
+                android:background="@drawable/background" />
+
+            <Chronometer
+                android:id="@+id/chronometerExample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:editable="false"
+                android:gravity="center_horizontal"
+                android:textColorHighlight="@android:color/holo_purple"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
